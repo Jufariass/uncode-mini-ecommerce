@@ -1,0 +1,105 @@
+
+/* =========================
+   HEADER
+========================= */
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  opacity: 0.75;
+  margin-top: 4px;
+}
+
+/* =========================
+   FILTROS
+========================= */
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+/* Wrapper do input + ícone */
+.filter-search {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Ícone 🔍 */
+.filter-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+/* Input */
+.filter-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px 0 36px; /* espaço pro ícone */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  outline: none;
+}
+
+.filter-input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Select */
+.filter-select {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  outline: none;
+  min-width: 180px;
+  cursor: pointer;
+}
+
+.filter-select option {
+  background: #121212;
+  color: #fff;
+}
+
+/* Focus */
+.filter-input:focus,
+.filter-select:focus {
+  border-color: rgba(124, 92, 255, 0.7);
+  box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.22);
+}
+
+/* =========================
+   MOBILE FIRST
+========================= */
+
+@media (max-width: 520px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-search,
+  .filter-select {
+    width: 100%;
+    min-width: 0;
+  }
+}

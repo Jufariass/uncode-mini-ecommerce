@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.cart {
+  position: relative;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+
+  padding: 8px;           /* clique confortável */
+  border-radius: 12px;    /* cantinho suave */
+  line-height: 1;
+  color: #fff;
+
+}
+
+.cart:focus {
+  outline: none;
+}
+
+.cart:focus {
+  outline: none;
+}
+
+.cart:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+
+  background: #ff4d4d;
+  color: #fff;
+}
