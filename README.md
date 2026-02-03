@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
+# Mini E-commerce – Desafio Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O projeto foi desenvolvido como parte do desafio técnico de Frontend, com o objetivo de demonstrar organização de código, boas práticas em React e TypeScript, além de um deploy público funcional.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias utilizadas aqui:
 
-## React Compiler
+- **React**
+- **TypeScript**
+- **Vite**
+- **CSS Modules**
+- **Netlify** (deploy)
+- **Context API** (gerenciamento de estado do carrinho)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Por que eu escolhi esse stack?
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Eu escolhi **React + Vite + TypeScript** por serem tecnologias modernas, bem leves e extremamente utilizadas no mercado.  
+O Vite oferece um ambiente de desenvolvimento rápido, enquanto o TypeScript ajuda a evitar erros comuns e melhora muito a manutenção do código.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Estrutura do projeto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+src/
+├── components/        # Componentes reutilizáveis (Header, Footer, ProductCard, etc)
+├── contexts/          # Context API (Carrinho)
+├── pages/             # Páginas da aplicação (Home, Product)
+├── services/          # Camada de acesso aos dados
+├── types/             # Tipagens TypeScript
+└── main.tsx           # Ponto de entrada da aplicação
+
+Os dados dos produtos estão simulados em um arquivo estático:
+public/products.json
+
+-------
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Como rodar o projeto localmente:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+# instalar dependências
+```
+npm install
+
+```
+# rodar em modo desenvolvimento
+```
+npm run dev
+
+A aplicação estará disponível em:
+
+http://localhost:5173
+
+---------
+
+Deploy público
+O projeto está publicado e acessível em:
+
+🔗 https://uncode-mini-ecommerce.netlify.app
+
+
+----------
+
+Decisões técnicas relevantes:
+
+Utilização de Context API para gerenciar o estado do carrinho de forma global.
+
+Separação clara entre camada de serviços e componentes de UI.
+
+Tratamento de erro para carregamento de produtos.
+
+Compatibilidade com diferentes formatos de products.json.
+
+Uso de componentes reutilizáveis para melhor escalabilidade.
+
+----------
+
+Diferenciais implementados:
+
+Busca de produtos por nome
+
+Filtro por categoria
+
+Gerenciamento de carrinho
+
+Projeto totalmente tipado com TypeScript
+
+Deploy automatizado via GitHub + Netlify
+
+
+-----------
+
+Uso de IA
+Ferramentas de IA foram utilizadas como apoio durante o desenvolvimento, principalmente para:
+
+Revisão de lógica
+
+Organização de código
+
+Apoio em decisões técnicas
+
+Todo o código foi compreendido, adaptado e validado manualmente.
+
+-----------
+
+Observações finais
+O foco desse projeto foi clareza, organização e funcionalidade, priorizando simplicidade e boas práticas, de acordo com todas as orientações do desafio.
+
+
+
+
+
+
+
+
+
