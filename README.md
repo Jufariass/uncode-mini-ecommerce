@@ -4,7 +4,7 @@ O projeto foi desenvolvido como parte do desafio técnico de Frontend, com o obj
 
 ---
 
-## 🛠️ Tecnologias utilizadas aqui:
+## Tecnologias utilizadas aqui:
 
 - **React**
 - **TypeScript**
