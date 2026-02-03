@@ -43,21 +43,19 @@ public/products.json
 Como rodar o projeto localmente:
 
 ```
-# instalar dependências
-
+#instalar dependências
 npm install
 
-````
-#
-````
+#rodar em modo desenvolvimento
+npm run dev
 
 A aplicação estará disponível em:
-
 http://localhost:5173
-
+````
 ---------
 
 Deploy público
+
 O projeto está publicado e acessível em:
 
 🔗 https://uncode-mini-ecommerce.netlify.app
@@ -107,7 +105,8 @@ Todo o código foi compreendido, adaptado e validado manualmente.
 
 -----------
 
-Observações finais
+Observações finais:
+
 O foco desse projeto foi clareza, organização e funcionalidade, priorizando simplicidade e boas práticas, de acordo com todas as orientações do desafio.
 
 
