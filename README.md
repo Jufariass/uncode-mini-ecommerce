@@ -1,4 +1,5 @@
-# Mini E-commerce – Desafio Frontend
+## Mini E-commerce – Desafio Frontend
+Projeto de um e-commerce funcional com listagem, busca, filtro, detalhes e carrinho.
 
 O projeto foi desenvolvido como parte do desafio técnico de Frontend, com o objetivo de demonstrar organização de código, boas práticas em React e TypeScript, além de um deploy público funcional.
 
@@ -26,27 +27,24 @@ O Vite oferece um ambiente de desenvolvimento rápido, enquanto o TypeScript aju
 
 ```bash
 src/
-├── components/        # Componentes reutilizáveis (Header, Footer, ProductCard, etc)
-├── contexts/          # Context API (Carrinho)
-├── pages/             # Páginas da aplicação (Home, Product)
-├── services/          # Camada de acesso aos dados
-├── types/             # Tipagens TypeScript
-└── main.tsx           # Ponto de entrada da aplicação
+├── components/        # Componentes UI
+├── contexts/          # Estado global (carrinho)
+├── pages/             # Páginas (Home, Product)
+├── services/          # Lógica de acesso aos dados (API ou JSON)
+├── types/             # Tipos TypeScript
 
-Os dados dos produtos estão simulados em um arquivo estático:
-public/products.json
 
 
 
 ```
 
-Como rodar o projeto localmente:
+## Como rodar o projeto localmente:
 
 ```
-#instalar dependências
+# instalar dependências
 npm install
 
-#rodar em modo desenvolvimento
+# rodar em modo dev
 npm run dev
 
 A aplicação estará disponível em:
@@ -54,30 +52,27 @@ http://localhost:5173
 ````
 ---------
 
-Deploy público
+## Deploy Público
 
-O projeto está publicado e acessível em:
+Veja o projeto funcionando online:
 
 🔗 https://uncode-mini-ecommerce.netlify.app
 
 
 ----------
 
-Decisões técnicas relevantes:
+## Decisões técnicas relevantes:
 
-Utilização de Context API para gerenciar o estado do carrinho de forma global.
+Eu usei o Context API para gerir o estado global do carrinho, mantendo lógica separada em serviços.
+Tratei o JSON para aceitar formatos diferentes, prevenindo erros como map is not a function em produção.
 
-Separação clara entre camada de serviços e componentes de UI.
-
-Tratamento de erro para carregamento de produtos.
-
-Compatibilidade com diferentes formatos de products.json.
-
-Uso de componentes reutilizáveis para melhor escalabilidade.
+----------
+## Visualização 
+![Home Page](link-da-imagem)
 
 ----------
 
-Diferenciais implementados:
+## Diferenciais implementados:
 
 Busca de produtos por nome
 
@@ -92,7 +87,7 @@ Deploy automatizado via GitHub + Netlify
 
 -----------
 
-Uso de IA
+## Uso de IA
 Ferramentas de IA foram utilizadas como apoio durante o desenvolvimento, principalmente para:
 
 Revisão de lógica
@@ -105,9 +100,14 @@ Todo o código foi compreendido, adaptado e validado manualmente.
 
 -----------
 
-Observações finais:
+## Observações finais:
 
 O foco desse projeto foi clareza, organização e funcionalidade, priorizando simplicidade e boas práticas, de acordo com todas as orientações do desafio.
+
+## Sobre
+
+Feito por *Júlia Araújo Farias* para o desafio Uncode.
+
 
 
 
