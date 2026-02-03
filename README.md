@@ -61,16 +61,21 @@ Veja o projeto funcionando online:
 
 ----------
 
+
 ## Decisões técnicas relevantes:
 
 Eu usei o Context API para gerir o estado global do carrinho, mantendo lógica separada em serviços.
 Tratei o JSON para aceitar formatos diferentes, prevenindo erros como map is not a function em produção.
 
-----------
-## Visualização 
-![Home Page](link-da-imagem)
 
 ----------
+
+## Visualização 
+
+![Home Page](https://raw.githubusercontent.com/Jufariass/uncode-mini-ecommerce/refs/heads/main/images/preview.png)
+
+----------
+
 
 ## Diferenciais implementados:
 
