@@ -36,7 +36,7 @@ src/
 Os dados dos produtos estão simulados em um arquivo estático:
 public/products.json
 
--------
+
 
 ```
 
