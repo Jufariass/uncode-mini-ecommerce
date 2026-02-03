@@ -47,11 +47,10 @@ Como rodar o projeto localmente:
 
 npm install
 
-```
-# rodar em modo desenvolvimento
+````
+#
+````
 
-npm run dev
-```
 A aplicação estará disponível em:
 
 http://localhost:5173
