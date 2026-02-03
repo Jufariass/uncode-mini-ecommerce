@@ -44,14 +44,14 @@ Como rodar o projeto localmente:
 
 ```
 # instalar dependências
-```
+
 npm install
 
 ```
 # rodar em modo desenvolvimento
-```
-npm run dev
 
+npm run dev
+```
 A aplicação estará disponível em:
 
 http://localhost:5173
